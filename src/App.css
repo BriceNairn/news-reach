@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 340px;
+  padding: 1.5rem;
+  background: #111827;
+  color: white;
+  overflow-y: auto;
+}
+
+.sidebar h1 {
+  
+  margin-top: 0;
+}
+
+.article-card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #1f2937;
+  border-radius: 12px;
+  cursor: pointer;
+
+  transition: 
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.article-card:hover {
+  transform: translateX(3px);
+}
+
+.article-card.selected {
+  background: #2d4b6a;
+  boder-left: 4px solid #4da3ff;
+
+  transform: translateX(6px) scale(1.02);
+}
+
+.article-card span {
+  display: block;
+  margin-top: 0.4rem;
+  color: #9ca3af;
+}
+
+.map-panel {
+  flex: 1;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+.region-filters button.active {
+  background: #4da3ff;
+  color: white;
+}
