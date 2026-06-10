@@ -24,3 +24,30 @@ The processed data is then visualised in a React + Leaflet web application, allo
 - Vite
 - Leaflet
 - GDELT Global Knowledge Graph (GKG)
+
+## Flowchart
+
+
+```mermaid
+flowchart LR
+
+    CSV[GDELT CSV files]
+
+    CSV --> Main[main.py]
+
+    MAIN --> FILTER[Filter Bad Domains]
+    MAIN --> DEDUPE[Deduplicate Articles]
+    MAIN --> ENRICH[Enrich Missing Headlines]
+
+    FILTER --> STORE[Article Store]
+    DEDUPE --> STORE
+    ENRICH --> STORE
+
+    STORE --> JSON[gdeltArticles.json]
+
+    JSON --> APP[React + Leaflet App]
+
+    APP --> MAP[Map View]
+    APP --> SIDEBAR[Article Sidebar]
+    APP --> FILTERS[Region Filters]
+```
