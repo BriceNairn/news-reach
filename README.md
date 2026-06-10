@@ -1,16 +1,26 @@
-# React + Vite
+# News Reach
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+News Reach is a data pipeline and interactive map that tracks global news stories usding GDELT data.
 
-Currently, two official plugins are available:
+Every 15 minutes, a new GDELT Global Knowledge Graph (GKG) dataset is ingested, cleaned and enriched before being added to a searchable article store.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The processed data is then visualised in a React + Leaflet web application, allowing users to explore news stories geographically.
 
-## React Compiler
+## Current Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Automated ingestion of GDELT GKG datasets
+- Duplicate article detection
+- Bad domain filtering
+- Headline enrichment from source websites
+- Geographic extraction and mapping
+- Interactive Leaflet map with article sidebar
+- Regional filtering
+- Historical article retention
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Python
+- React
+- Vite
+- Leaflet
+- GDELT Global Knowledge Graph (GKG)
