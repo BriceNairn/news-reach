@@ -1,2 +1,16 @@
-# news-reach
-Interactive global news map using GDELT, Python, React, Leaflet
+# News Reach
+
+Interactive global news map built using:
+
+- GDELT
+- Python
+- React
+- Leaflet
+
+Features:
+
+- Automated GDELT ingestion
+- News geolocation
+- Interactive map visualisation
+- Regional filtering
+- Duplicate article handling
