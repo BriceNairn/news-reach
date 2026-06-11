@@ -2,6 +2,8 @@
 
 News Reach is a data pipeline and interactive map that tracks global news stories usding GDELT data.
 
+**<a href:"https://www.gdeltproject.org/">The GDELT Project</a>**
+
 ![News Reach Screenshot](docs/news-reach-map.png)
 
 Every 15 minutes, a new GDELT Global Knowledge Graph (GKG) dataset is ingested, cleaned and enriched before being added to a searchable article store.
