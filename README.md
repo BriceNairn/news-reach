@@ -2,7 +2,7 @@
 
 News Reach is a data pipeline and interactive map that tracks global news stories usding GDELT data.
 
-**<a href:"https://www.gdeltproject.org/">The GDELT Project</a>**
+**[The GDELT Project](https://www.gdeltproject.org/)**
 
 ![News Reach Screenshot](docs/news-reach-map.png)
 
